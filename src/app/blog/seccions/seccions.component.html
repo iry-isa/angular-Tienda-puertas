@@ -1,0 +1,39 @@
+<div class="wrapper">
+
+    <header class="container-fluid">
+        <nav>
+
+            <ul class="menu ">
+
+                <li>
+                    <div class="dropdown">
+
+                        <button>Sectiuni</button>
+                        <div>
+                            <a class=" " routerLinkActive="active" [routerLink]="['/seccions']">Toate Sectiunile</a>
+                            <a class=" " routerLinkActive="active" [routerLink]="['/articulos']">articulos </a>
+                            <a class=" " routerLinkActive="active" [routerLink]="['/articulo']">articulo</a>
+                            <a class=" " routerLinkActive="active" [routerLink]="['/crear-articulo']">Crear Articulo</a>
+                            <a class=" " routerLinkActive="active" [routerLink]="['/editar-articulo']">Editar Articulo</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class=" " routerLinkActive="active" [routerLink]="['/secciones']">Sectiuni</a></li>
+                <li><a class=" " routerLinkActive="active" [routerLink]="['/articulos']">Articulos</a></li>
+                <li><a class=" " routerLinkActive="active" [routerLink]="['/articulo']">Articulo</a></li>
+                <li><a class=" " routerLinkActive="active" [routerLink]="['/detallearticulo']">Detalle Articulo</a></li>
+
+                <li>
+                    <a class=" " routerLinkActive="active" [routerLink]="['/crear-articulo']">Crear aRTICULO</a>
+                </li>
+                <li><a class=" " routerLinkActive="active" [routerLink]="['/editar-articulo']">eDITARaRTICULO</a></li>
+
+
+            </ul>
+
+        </nav>
+        <div class="cauta" id="ctn-bars-search ">
+            <input type="text " id="inputSearch " placeholder="¿Qué deseas buscar? ">
+        </div>
+    </header>
+</div>

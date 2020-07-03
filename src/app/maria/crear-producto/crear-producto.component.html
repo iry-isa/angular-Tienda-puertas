@@ -1,0 +1,62 @@
+<body>
+
+    <div class="grid contenedor contenido-principal">
+        <aside class="sidebar col-3">
+            <h2>Administator</h2>
+
+            <nav class="navegacion">
+                <a [routerLink]="['/clientes']" class=" clientes ">Clienti</a>
+                <a [routerLink]="['/productos']" class=" productos ">Produse</a>
+                <a [routerLink]="['/pedidos']" class=" pedidos ">Cereri produse</a>
+            </nav>
+        </aside>
+
+        <main class="caja-contenido col-9 ">
+
+            <form action="/productos " method="POST ">
+                <legend>Adauga Usa</legend>
+                <div class="campo ">
+                    <label>Categoria:</label>
+                    <input type="text " placeholder="Categoria " name="categoria ">
+                </div>
+
+                <div class="campo ">
+                    <label>Nombre:</label>
+                    <input type="text " placeholder="Nume Produs " name="nombre ">
+                </div>
+
+                <div class="campo ">
+                    <label>Precio:</label>
+                    <input type="number " name="precio " min="0.00 " step="0.01 " placeholder="Precio ">
+                </div>
+                <div class="campo ">
+                    <label>Dimensiuni:</label>
+                    <input type="text " placeholder="Dimensiuni ">
+                </div>
+                <div class="campo ">
+                    <label>Culoare:</label>
+                    <input type="text " placeholder="culoare ">
+                </div>
+                <div class="campo ">
+                    <label>Geam:</label>
+                    <input type="text " placeholder="Geam ">
+                </div>
+                <div class="campo ">
+                    <label>Descriere:</label>
+                    <textarea placeholder="Descriere " id="descriere " name="nombre "></textarea>
+                </div>
+
+                <div class="campo ">
+                    <label>Imagen:</label>
+                    <input type="file " name="imagen ">
+                </div>
+                <div class="enviar ">
+                    <input type="submit " class="btn btn " value="Agregar Producto ">
+                </div>
+
+            </form>
+
+        </main>
+    </div>
+
+</body>

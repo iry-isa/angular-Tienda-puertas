@@ -1,0 +1,35 @@
+<body>
+
+    <div id="login-box">
+        <div class="left-box">
+            <h1> Creaza un cont</h1>
+
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Parola:" />
+            <input type="password" name="password2" placeholder="Repeta parola:" />
+            <input type="submit" name="signup-button" value="Sign Up" />
+            <div><a class=" " routerLinkActive="active" [routerLink]="['/politicaPrivacidad']">By signing in, you accept the Terms of Service and Privacy Policy.</a></div>
+        </div>
+        <!--cambiar user por el nombre de usuario-->
+        <div class="right-box">
+            <h1> Autentifica-te</h1>
+
+            <form>
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Enter email">
+                <p>Parola</p>
+
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <input type="submit" name="login-button" value="Autentifica-te">
+                <p>no tienes cuenta?</p>
+            </form>
+            <button class="social facebook">Autentifica-te cu Facebook</button>
+            <button class="social google">Autentifica-te cu Google+</button>
+            <div><a class=" " routerLinkActive="active" [routerLink]="['/termsofservices']">
+                By login in, you accept the Terms of Service and Privacy Policy</a></div>
+        </div>
+        <div class="or">OR</div>
+    </div>
+
+</body>
