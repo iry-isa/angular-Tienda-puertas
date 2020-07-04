@@ -16,8 +16,27 @@
             <form action="/productos " method="POST ">
                 <legend>Adauga Usa</legend>
                 <div class="campo ">
+                    <label>Id:</label>
+                    <input type="text " placeholder="Id " name="Id ">
+                </div>
+                <div class="campo ">
                     <label>Categoria:</label>
-                    <input type="text " placeholder="Categoria " name="categoria ">
+                    <ul class="categoria ">
+                        <p>Selectioneaza o categorie</p>
+                        <li>
+                            <select class="form-control" id="categoria">
+                                <option value="" selected>Selectioneaza o categorie</option>
+                                <option value="usiInterior">Usi Interior</option>
+                                <option value="usiExterior">Usi Exterior</option>
+                                <option value="usiPVC">Usi PVC</option>
+                                <option value="geamuriPVC">Geamuri pvc</option>
+                                <option value="sobeTeracota">Sobe Teracota</option>
+                                <option value="accesoriiUsi">Accesorii Usi</option>
+                                <option value="accesorii">Accesorii</option>
+                                
+                            </select>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="campo ">
@@ -30,28 +49,54 @@
                     <input type="number " name="precio " min="0.00 " step="0.01 " placeholder="Precio ">
                 </div>
                 <div class="campo ">
-                    <label>Dimensiuni:</label>
-                    <input type="text " placeholder="Dimensiuni ">
-                </div>
-                <div class="campo ">
                     <label>Culoare:</label>
-                    <input type="text " placeholder="culoare ">
+                    <ul class="categoria ">
+                        <p>Selectioneaza o culoare</p>
+                        <li>
+                            <select class="form-control" id="categoria">
+                                <option value="" selected>Selectioneaza o culoare</option>
+                                <option value="alb">alb</option>
+                                <option value="gri">gri</option>
+                                <option value="stejarDeschis">Stejar Deschis</option>
+                                <option value="stejarInchis">Stejar Inchis</option>
+                                <option value="cires">Cires</option>
+                                <option value="wenge">Wenge</option>
+                                <option value="accesorii">Accesorii</option>
+                                
+                            </select>
+                        </li>
+                    </ul>
                 </div>
                 <div class="campo ">
                     <label>Geam:</label>
-                    <input type="text " placeholder="Geam ">
+                    <ul class="categoria ">
+                        <p>Geam</p>
+                        <li>
+                            <select class="form-control" id="categoria">
+                                <option value="" selected>Usa cu geam?</option>
+                                <option value="da">Da</option>
+                                <option value="nu">Nu</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
+                <div class="campo ">
+                    <label>Dimensiuni:</label>
+                    <input type="text " placeholder="Dimensiuni ">
+                </div>
+
+
                 <div class="campo ">
                     <label>Descriere:</label>
                     <textarea placeholder="Descriere " id="descriere " name="nombre "></textarea>
                 </div>
 
-                <div class="campo ">
-                    <label>Imagen:</label>
-                    <input type="file " name="imagen ">
+                <div class="campo">
+                    <label for="choose_file">Imagen:</label>
+                    <input type="file" name="imagen" id="choose_file">
                 </div>
                 <div class="enviar ">
-                    <input type="submit " class="btn btn " value="Agregar Producto ">
+                    <input type="submit " class="btn btn " value="Salvati produs ">
                 </div>
 
             </form>

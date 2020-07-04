@@ -45,7 +45,7 @@ h1 {
 
 h2 {
     font-family: var(--fontTexto);
-    color: var(--grisOscuro);
+    color: black;
     font-size: 3rem;
 }
 
@@ -187,8 +187,8 @@ h2 {
 
 .navegacion a {
     display: block;
-    font-family: var(--fontTexto);
-    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
     margin-bottom: 2rem;
     font-size: 1.8rem;
     position: relative;
@@ -261,7 +261,8 @@ h2 {
 .pedido,
 .resumen li {
     padding: 2rem 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px black;
+    ;
 }
 
 .cliente:last-of-type,
@@ -380,7 +381,7 @@ form {
 form legend {
     font-size: 2.4rem;
     color: black;
-    font-family: var(--fontTexto);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-align: center;
     display: block;
@@ -397,7 +398,7 @@ form .campo {
 
 form .campo label {
     font-weight: bold;
-    font-family: var(--fontTexto);
+    font-family: Arial, Helvetica, sans-serif;
     flex: 0 0 100px;
 }
 

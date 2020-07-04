@@ -736,3 +736,20 @@ footer {
 .btn button:hover {
     transform: scale(0.9);
 }
+
+#container {
+    perspective: 500px;
+    width: 700px;
+    margin: 200px auto;
+}
+
+#imagen {
+    transition: all 1s;
+}
+
+#imagen:hover {
+    /* rotateZ */
+    /* translateZ */
+    /* scaleZ */
+    transform: translateZ(200px) scaleZ(2);
+}

@@ -13,3 +13,5 @@ export class DetalleGeamPVCComponent implements OnInit {
   }
 
 }
+
+

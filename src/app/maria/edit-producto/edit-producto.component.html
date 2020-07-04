@@ -1,58 +1,108 @@
-<div class="edit">
-    <table class="table">
-        <thead>
-            <th class="imagen">Imagen</th>
-            <th>Cod</th>
-            <th>Produs</th>
-            <th>Pret</th>
-            <th>Culoare</th>
-            <th>Descriere</th>
-            <th>Modifica</th>
-            <th>Sterge</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th class="imagen"><img src="/images/blanco.png" alt=""></th>
-                <td data-label="código">En stock</td>
-                <td data-label="usaInterior"></td>
-                <td data-label="precio">340</td>
-                <td data-label="color">alba</td>
-                <td data-label="dimensiuni">80cm</td>
-                <td data-label="dimensiuni">Modifica</td>
-                <td data-label="dimensiuni">Sterge</td>
+<body>
 
-            </tr>
+    <header class="barra">
+        <div class="contenedor">
+            <h1>LC - Administrador de Productos</h1>
+        </div>
+    </header>
 
-            <tr>
-                <th class="imagen"><img src="/images/blanco.png" alt=""></th>
-                <td data-label="código">En stock</td>
-                <td data-label="usaInterior"></td>
-                <td data-label="precio">340</td>
-                <td data-label="color">alba</td>
-                <td data-label="dimensiuni">80cm</td>
+    <div class="grid contenedor contenido-principal">
+        <aside class="sidebar col-3">
+            <h2>Administración</h2>
 
-            </tr>
+            <nav class="navegacion">
+                <a [routerLink]="['/clientes']" class=" clientes ">Clienti</a>
+                <a [routerLink]="['/productos']" class=" productos ">Produse</a>
+                <a [routerLink]="['/pedidos']" class=" pedidos ">Cereri produse</a>
+            </nav>
+        </aside>
 
-            <tr>
-                <th class="imagen"><img src="/images/blanco.png" alt=""></th>
-                <td data-label="código">En stock</td>
-                <td data-label="usaInterior"></td>
-                <td data-label="precio">340</td>
-                <td data-label="color">alba</td>
-                <td data-label="dimensiuni">80cm</td>
+        <main class="caja-contenido col-9">
+            <h2>Productos</h2>
+            <div class=" content ">
+                <div class="btnEditar">
+                    <button [routerLink]="['/crearproducto']">Produs Nou</button>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+            <div id="main-container">
 
-            </tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Culoare</th>
+                            <th>Geam</th>
+                            <th>Dimensiuni</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
+                        </tr>
+                    </thead>
 
-            <tr>
-                <th class="imagen"><img src="/images/blanco.png" alt=""></th>
-                <td data-label="código">En stock</td>
-                <td data-label="usaInterior"></td>
-                <td data-label="precio">340</td>
-                <td data-label="color">alba</td>
-                <td data-label="dimensiuni">80cm</td>
+                    <tr>
+                        <th>Id</th>
+                        <th>
+                            <div class="img">
+                                <img [routerLink]="['/assets/images/gris4.jpg']" alt="user" width="100">
 
-            </tr>
-        </tbody>
-    </table>
+                            </div>
+                        </th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Culoare</th>
+                        <th>Geam</th>
+                        <th>Dimensiuni</th>
+                        <th>
+                            <div class=" content ">
+                                <div class="btnEditar">
+                                    <button [routerLink]="['/crearproducto']">Editar</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class=" content ">
+                                <div class="btnBorrar">
+                                    <button>Borrar</button>
+                                </div>
+                            </div>
+                    </tr>
+                    <tr>
+                        <th>Id</th>
+                        <th>
+                            <div class="img">
+                                <img [routerLink]="['/assets/images/gris4.jpg']" alt="user" width="100">
 
-</div>
+                            </div>
+                        </th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Culoare</th>
+                        <th>Geam</th>
+                        <th>Dimensiuni</th>
+                        <th>
+                            <div class=" content ">
+                                <div class="btnEditar">
+                                    <button [routerLink]="['/crearproducto']">Editar</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class=" content ">
+                                <div class="btnBorrar">
+                                    <button>Borrar</button>
+                                </div>
+                            </div>
+                    </tr>
+
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
