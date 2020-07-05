@@ -1,31 +1,117 @@
-<main class="seccion contenedor">
-    <h2 class="fw-300">Usi Interior YMCA</h2>
+<body>
+    <nav class="nav">
+        <a href="#" class="nav__link">Lc Magazin</a>
+        <div class="nav__link">
+            Categorii
+            <div class="nav__link-group">
+                <a [routerLink]="['/articole']" class="nav__link">Usi Interior</a>
+                <a [routerLink]="['/articole']" class="nav__link">Usi Exterior</a>
+                <a [routerLink]="['/articole']" class="nav__link">Usi PVC</a>
+                <a [routerLink]="['/articole']" class="nav__link">Geamuri PVC</a>
+                <a [routerLink]="['/articole']" class="nav__link">Sobe Teracota</a>
+                <a [routerLink]="['/articole']" class="nav__link">Accesorii Usi </a>
+            </div>
+        </div>
 
-    <div class="contenedor-anuncios">
+    </nav>
+    <section id="empty"></section>
 
-
-        <div class="anuncios" id="container">
-            <li><img [src]="" class="img-fluid" [alt]="" id="imagen" width="400">
-                <div class="anuncio">
-                    <h3>Usa Interior YMCA</h3>
+    <!-- section tours -->
+    <section id="tours">
+        <h1>Usi Interior Usi Exterior Usi PVC Geamuri PVC Sobe Teracota Accesorii Usi </h1>
+        <div class="tours-container">
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Usi Interior</h2>
                     <p>COD: Y316A </p>
                     <p class="precio">300 euros</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <p>Dimensiuni:</p>
-                        </li>
-                    </ul>
+
+                    <p>Dimensiuni:80cm</p>
+
                     <div class="btn">
-                        <button type="button" class="btn" [routerLink]="['/detalleUsaInterior']">Detalii</button>
-                    </div><br>
-                    <div class="btn">
-                        <button type="button" class="btn" [routerLink]="['/usiInterior']">Inapoi</button>
+                        <button type="button" class="btn" [routerLink]="['/usiInterior']">Usi Interior</button>
 
                     </div>
                 </div>
+            </div>
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Usi Exterior</h2>
+                    <p>COD: Y316A </p>
+                    <p class="precio">300 euros</p>
+
+                    <p>Dimensiuni:80cm</p>
+
+                    <div class="btn">
+                        <button type="button" class="btn" [routerLink]="['/usiExterior']">Usi Exterior</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Usi PVC</h2>
+                    <p>COD: Y316A </p>
+                    <p class="precio">300 euros</p>
+
+                    <p>Dimensiuni:80cm</p>
+
+                    <div class="btn">
+                        <button type="button" class="btn" [routerLink]="['/usiPVC']">Usi PVC</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Geamuri Pvc</h2>
+                    <p>COD: Y316A </p>
+                    <p class="precio">300 euros</p>
+
+                    <p>Dimensiuni:80cm</p>
+
+                    <div class="btn">
+                        <button type="button" class="btn" [routerLink]="['/geamuriPVC']">Geamuri PVC</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Sobe Teracota</h2>
+                    <p>COD: Y316A </p>
+                    <p class="precio">300 euros</p>
+
+                    <p>Dimensiuni:80cm</p>
+
+                    <div class="btn">
+                        <button type="button" class="btn" [routerLink]="['/sobeTeracota']">Sobe Teracota</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="assets/images/gris4.png" alt="Imagen Nosotros">
+                <div class="box-text">
+                    <h2>Accesorii Usi</h2>
+                    <p>COD: Y316A </p>
+                    <p class="precio">300 euros</p>
+
+                    <p>Dimensiuni:80cm</p>
+
+                    <div class="btn">
+                        <button type="button" class="btn" [routerLink]="['/acesoriiUsi']">Acesorii Usi</button>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-
-
-</main>
+</body>

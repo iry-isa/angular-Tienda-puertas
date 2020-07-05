@@ -37,7 +37,7 @@ const routes: Routes = [
     { path: 'articulos', component: ArticulosComponent },
     { path: 'articulo', component: ArticuloComponent },
     {path: 'detalleArticulo', component: DetalleArticuloComponent },
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+    { path: '', redirectTo: '/seccion', pathMatch: 'full' }
 ];
 
 @NgModule({
