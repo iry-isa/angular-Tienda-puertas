@@ -11,8 +11,8 @@ body {
 #login-box {
     position: relative;
     margin: 5% auto;
-    height: 550px;
-    width: 600px;
+    height: 750px;
+    min-width: 320px;
     background: rgb(175, 226, 182);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -23,8 +23,8 @@ body {
     left: 0;
     box-sizing: border-box;
     padding: 40px;
-    width: 300px;
-    height: 550px;
+    min-width: 320px;
+    height: 70px;
 }
 
 h1 {
@@ -63,12 +63,14 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.2s ease;
     cursor: pointer;
+    
 }
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
     background: #080ce4;
     transition: 0.2s ease;
+    
 }
 
 .right-box {
@@ -104,6 +106,7 @@ input[type="submit"]:focus {
     color: #fff;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    
 }
 
 button.social {
@@ -117,10 +120,13 @@ button.social {
     font-weight: 500;
     transition: 0.2s ease;
     cursor: pointer;
+    
+    
 }
 
 .facebook {
     background: #32508e;
+    
 }
 
 .twitter {

@@ -43,6 +43,8 @@ import { BlogRoutingModule } from './blog/blog.routing';
 import { MariaRoutingModule } from './maria/maria.routes';
 import { MariaModule } from './maria/maria.module';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,6 +85,7 @@ import { MariaModule } from './maria/maria.module';
     DetalleAcesoriiComponent,
     AcesoriiComponent,
     ProfileComponent,
+   
     ],
   imports: [
     BrowserModule,

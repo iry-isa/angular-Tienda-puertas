@@ -1,1 +1,38 @@
-<p>dashboard works!</p>
+<body>
+    <div class="page-container">
+
+        <nav class="nav">
+            <div class="nav__border"></div>
+            <input type="submit" name="login-button" value="Inchide sesiune" [routerLink]="['/logout']">
+                <div class="nav__icon-container">
+
+                </div>
+            <a routerLinkActive="active" [routerLink]="['/#home']" class="nav__link">
+                <div class="nav__icon-container"></div>
+                <span class="nav__label">Acasa</span>
+            </a>
+
+            <a routerLinkActive="active" [routerLink]="['/productos']" class="nav__link">
+                <div class="nav__icon-container"> </div>
+                <span class="nav__label">Magazin</span>
+            </a>
+            <a routerLinkActive="active" [routerLink]="['/seccion']" class="nav__link">
+                <div class="nav__icon-container"> </div>
+                <span class="nav__label">Categorii Blog</span>
+            </a>
+            <a routerLinkActive="active" [routerLink]="['/creararticulo']" class="nav__link">
+                <div class="nav__icon-container"> </div>
+                <span class="nav__label">Crear Articulo</span>
+            </a>
+            <a routerLinkActive="active" [routerLink]="['/editarticulo']" class="nav__link">
+                <div class="nav__icon-container"> </div>
+                <span class="nav__label">Editar Articulo</span>
+            </a>
+
+
+        </nav>
+        <main class="main">
+        </main>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>

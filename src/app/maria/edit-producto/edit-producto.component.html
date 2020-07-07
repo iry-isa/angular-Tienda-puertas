@@ -1,108 +1,128 @@
-<body>
-
-    <header class="barra">
-        <div class="contenedor">
-            <h1>LC - Administrador de Productos</h1>
-        </div>
-    </header>
-
-    <div class="grid contenedor contenido-principal">
-        <aside class="sidebar col-3">
-            <h2>Administración</h2>
-
-            <nav class="navegacion">
-                <a [routerLink]="['/clientes']" class=" clientes ">Clienti</a>
-                <a [routerLink]="['/productos']" class=" productos ">Produse</a>
-                <a [routerLink]="['/pedidos']" class=" pedidos ">Cereri produse</a>
-            </nav>
-        </aside>
-
-        <main class="caja-contenido col-9">
-            <h2>Productos</h2>
-            <div class=" content ">
-                <div class="btnEditar">
+<body class="contenedor">
+  
+    <div class="container-row">
+    <h2>Productos</h2>
+             <div class=" content ">
+                        <div class="btnNuevo">
                     <button [routerLink]="['/crearproducto']">Produs Nou</button>
                     <i class="fas fa-plus-circle"></i>
                 </div>
             </div>
-            <div id="main-container">
+    <table class="table">
+        <thead>
+            <th class="imagen"><div class="img">
+                                <img [routerLink]="['/assets/images/portada.jpg']" alt="user" width="100">
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Culoare</th>
-                            <th>Geam</th>
-                            <th>Dimensiuni</th>
-                            <th>Editar</th>
-                            <th>Borrar</th>
-                        </tr>
-                    </thead>
+                            </div></th>
+            <th>Id</th>
+             <th>Nombre</th>
+            <th>Precio</th>
+            <th>Culoare</th>
+            <th>Geam</th>
+            <th>Dimensiuni</th>
+            <th>Modifica</th>
+            <th>Sterge</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="imagen"><img [routerLink]="['/assets/images/gris4.jpg']" alt="producto" width="100"></th>
+                <td data-label="id">En stock</td>
+                <td data-label="usaInterior">Usa Interior</td>
+                <td data-label="precio">340</td>
+                <td data-label="color">alba</td>
+                 <td data-label="da">da</td>
+                <td data-label="dimensiuni">80x80</td>
+                <td data-label="editar">
+                    <div class=" content ">
+                        <div class="btnEditar">
+                            <button [routerLink]="['/crearproducto']">Editar</button>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="borrar">
+                    <div class=" content ">
+                        <div class="btnBorrar">
+                            <button>Borrar</button>
+                        </div>
+                    </div>
+                </td>
 
-                    <tr>
-                        <th>Id</th>
-                        <th>
-                            <div class="img">
-                                <img [routerLink]="['/assets/images/gris4.jpg']" alt="user" width="100">
 
-                            </div>
-                        </th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>Culoare</th>
-                        <th>Geam</th>
-                        <th>Dimensiuni</th>
-                        <th>
-                            <div class=" content ">
-                                <div class="btnEditar">
-                                    <button [routerLink]="['/crearproducto']">Editar</button>
-                                </div>
-                            </div>
-                        </th>
-                        <th>
-                            <div class=" content ">
-                                <div class="btnBorrar">
-                                    <button>Borrar</button>
-                                </div>
-                            </div>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <th>
-                            <div class="img">
-                                <img [routerLink]="['/assets/images/gris4.jpg']" alt="user" width="100">
+            </tr>
 
-                            </div>
-                        </th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>Culoare</th>
-                        <th>Geam</th>
-                        <th>Dimensiuni</th>
-                        <th>
-                            <div class=" content ">
-                                <div class="btnEditar">
-                                    <button [routerLink]="['/crearproducto']">Editar</button>
-                                </div>
-                            </div>
-                        </th>
-                        <th>
-                            <div class=" content ">
-                                <div class="btnBorrar">
-                                    <button>Borrar</button>
-                                </div>
-                            </div>
-                    </tr>
+            <tr>
+                <th class="imagen"><img [routerLink]="['/assets/images/gris4.jpg']" alt="producto" width="100"></th>
+                <td data-label="id">En stock</td>
+                <td data-label="usaInterior">Usa Interior</td>
+                <td data-label="precio">340</td>
+                <td data-label="color">alba</td>
+                 <td data-label="da">da</td>
+                <td data-label="dimensiuni">80x80</td>
+                <td data-label="editar">
+                    <div class=" content ">
+                        <div class="btnEditar">
+                            <button [routerLink]="['/crearproducto']">Editar</button>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="borrar">
+                    <div class=" content ">
+                        <div class="btnBorrar">
+                            <button>Borrar</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
 
-                </table>
-            </div>
-        </main>
-    </div>
+            <tr>
+                  <th class="imagen"><img [routerLink]="['/assets/images/gris4.jpg']" alt="producto" width="100"></th>
+                <td data-label="id">En stock</td>
+                <td data-label="usaInterior">Usa Interior</td>
+                <td data-label="precio">340</td>
+                <td data-label="color">alba</td>
+                 <td data-label="da">da</td>
+                <td data-label="dimensiuni">80x80</td>
+                <td data-label="editar">
+                    <div class=" content ">
+                        <div class="btnEditar">
+                            <button [routerLink]="['/crearproducto']">Editar</button>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="borrar">
+                    <div class=" content ">
+                        <div class="btnBorrar">
+                            <button>Borrar</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                  <th class="imagen"><img [routerLink]="['/assets/images/gris4.jpg']" alt="producto" width="100"></th>
+                <td data-label="id">En stock</td>
+                <td data-label="usaInterior">Usa Interior</td>
+                <td data-label="precio">340</td>
+                <td data-label="color">alba</td>
+                 <td data-label="da">da</td>
+                <td data-label="dimensiuni">80x80</td>
+                <td data-label="editar">
+                    <div class=" content ">
+                        <div class="btnEditar">
+                            <button [routerLink]="['/crearproducto']">Editar</button>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="borrar">
+                    <div class=" content ">
+                        <div class="btnBorrar">
+                            <button>Borrar</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 </body>

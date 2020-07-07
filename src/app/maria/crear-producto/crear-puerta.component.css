@@ -45,7 +45,7 @@ h1 {
 
 h2 {
     font-family: var(--fontTexto);
-    color: black;
+    color: var(--grisOscuro);
     font-size: 3rem;
 }
 
@@ -75,7 +75,6 @@ h2 {
     border: none;
     flex: 0 0 100%;
     width: 100%;
-    background-color: green;
 }
 
 .btn:hover {
@@ -95,23 +94,23 @@ h2 {
 }
 
 .btn-azul {
-    background-color: blue;
+    background-color: var(--azul);
 }
 
 .btn-rojo {
-    background-color: red;
+    background-color: var(--rojo);
 }
 
 .btn-naranja {
-    background-color: orange;
+    background-color: var(--naranja);
 }
 
 .btn-amarillo {
-    background-color: yellow;
+    background-color: var(--amarillo);
 }
 
 .btn-verde {
-    background-color: green;
+    background-color: var(--verde);
 }
 
 .btn:disabled {
@@ -146,7 +145,7 @@ h2 {
 }
 
 .barra {
-    background-color: blue;
+    background-color: var(--azul);
     padding: 2rem 0;
 }
 
@@ -187,8 +186,8 @@ h2 {
 
 .navegacion a {
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: var(--fontTexto);
+    color: var(--grisOscuro);
     margin-bottom: 2rem;
     font-size: 1.8rem;
     position: relative;
@@ -261,8 +260,7 @@ h2 {
 .pedido,
 .resumen li {
     padding: 2rem 0;
-    border-bottom: 1px black;
-    ;
+    border-bottom: 1px solid var(--grisClaro);
 }
 
 .cliente:last-of-type,
@@ -327,7 +325,7 @@ h2 {
 .pedido .id,
 .resumen .nombre {
     font-size: 2.4rem;
-    color: blue;
+    color: var(--azul);
 }
 
 .cliente .empresa,
@@ -339,7 +337,7 @@ h2 {
 
 .pedido .total {
     font-weight: 700;
-    color: blue;
+    color: var(--azul);
     font-size: 2.4rem;
 }
 
@@ -380,8 +378,8 @@ form {
 
 form legend {
     font-size: 2.4rem;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--azul);
+    font-family: var(--fontTexto);
     font-weight: 700;
     text-align: center;
     display: block;
@@ -398,7 +396,7 @@ form .campo {
 
 form .campo label {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontTexto);
     flex: 0 0 100px;
 }
 
@@ -416,6 +414,7 @@ form .campo input[readonly] {
     padding: .5rem 2rem;
     display: flex;
     justify-content: flex-end;
+    color: green;
 }
 
 .resumen {
@@ -456,7 +455,7 @@ form .campo input[readonly] {
 
 .fa-minus,
 .fa-plus {
-    color: rgb(220, 248, 220);
+    color: white;
 }
 
 .fa-minus:hover,
@@ -466,7 +465,7 @@ form .campo input[readonly] {
 
 .contenedor-cantidad .fa-plus,
 .contenedor-cantidad .fa-minus {
-    background-color: blue;
+    background-color: var(--azul);
 }
 
 .contenedor-cantidad input {
@@ -497,14 +496,14 @@ form .campo input[readonly] {
 }
 
 .ficha-cliente {
-    background-color: whitesmoke;
+    background-color: var(--grisClaro);
     padding: 1rem 4rem;
 }
 
 h3.resumen-titulo {
     font-size: 2.4rem;
     text-align: center;
-    color: blue;
+    color: var(--azul);
 }
 
 .total {
@@ -516,14 +515,14 @@ h3.resumen-titulo {
 }
 
 .total span {
-    color: blue;
+    color: var(--azul);
 }
 
 .login {
     max-width: 520px;
     margin: 15rem auto 0 auto;
     padding: 4rem 2rem;
-    background-color: whitesmoke;
+    background-color: var(--grisClaro);
     border-radius: 1.5rem;
 }
 

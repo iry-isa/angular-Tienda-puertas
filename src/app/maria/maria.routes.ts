@@ -36,6 +36,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
+import { GraficasComponent } from './graficas/graficas.component';
 
 
 
@@ -43,18 +44,25 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 
 const routes: Routes = [
 {
-        path: 'dashboardmaria', component: DashboardMariaComponent, data: { titulo: 'DashboardMaria' }
+        path: 'maria', component: DashboardMariaComponent, data: { titulo: 'DashboardMaria' }
         // canActivate: [ VerificaTokenGuard ],
     },
 
     { path: 'crearproducto', component: CrearProductoComponent, data: { titulo: 'CrearProducto' } },
-    { path: 'crearpurta', component: CrearPuertaComponent, data: { titulo: 'CrearPuerta' } },
+    { path: 'crearpuertaint', component: CrearPuertaComponent, data: { titulo: 'CrearPuertaint' } },
+    { path: 'crearpuertaext', component: CrearPuertaComponent, data: { titulo: 'CrearPuertaext' } },
+    { path: 'crearpuertapvc', component: CrearVentanaComponent, data: { titulo: 'CrearPuertapvc' } },
     { path: 'crearventana', component: CrearVentanaComponent, data: { titulo: 'CrearVentana' } },
+    { path: 'crearsoba', component: CrearVentanaComponent, data: { titulo: 'CrearVentana' } },
     { path: 'editarproducto', component: EditProductoComponent, data: { titulo: 'EditProducto' } },
-    { path: 'editarpuerta', component: EditPuertaComponent, data: { titulo: 'EditPuerta' } },
+    { path: 'editarpuertaint', component: EditPuertaComponent, data: { titulo: 'EditPuertaint' } },
+    { path: 'editarpuertaext', component: EditPuertaComponent, data: { titulo: 'EditPuertaext' } },
+    { path: 'editarpuertapvc', component: EditPuertaComponent, data: { titulo: 'EditPuertapvc' } },
     { path: 'editarventana', component: EditventanaComponent, data: { titulo: 'EditVentana' } },
+    { path: 'editarsoba', component: EditventanaComponent, data: { titulo: 'Editsoba' } },
     { path: 'progress', component: ProgressComponent, data: { titulo: 'ProgressBars' } },
     { path: 'graficas1', component: Graficas1Component, data: { titulo: 'Gráficas' } },
+    { path: 'graficas', component: GraficasComponent, data: { titulo: 'Gráficas' } },
     { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' } },
     { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' } },
     { path: 'account-settings', component: AccoutSettingsComponent, data: { titulo: 'Ajustes de Tema' } },

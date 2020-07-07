@@ -1,1 +1,66 @@
-<p>crear-articulo works!</p>
+<body>
+
+    <div class="grid contenedor contenido-principal">
+        <aside class="sidebar col-3">
+            <h2>Administator</h2>
+
+            <nav class="navegacion">
+                <a [routerLink]="['/categorii']" class=" clientes ">Categorii</a>
+                <a [routerLink]="['/productos']" class=" productos ">Articole</a>
+                <a [routerLink]="['/pedidos']" class=" pedidos ">Cereri produse</a>
+            </nav>
+        </aside>
+
+        <main class="caja-contenido col-9 ">
+
+            <form action="/productos " method="POST ">
+                <legend>scrie un articol</legend>
+                <div class="campo ">
+                    <label>Id:</label>
+                    <input type="text " placeholder="Id " name="Id ">
+                </div>
+                <div class="campo ">
+                    <label>Categoria:</label>
+                    <ul class="categoria ">
+                        <p>Selectioneaza o categorie</p>
+                        <li>
+                            <select class="form-control" id="categoria">
+                                <option value="" selected>Selectioneaza o categorie</option>
+                                <option value="usiInterior">Usi Interior</option>
+                                <option value="usiExterior">Usi Exterior</option>
+                                <option value="usiPVC">Usi PVC</option>
+                                <option value="geamuriPVC">Geamuri pvc</option>
+                                <option value="sobeTeracota">Sobe Teracota</option>
+                                <option value="accesoriiUsi">Accesorii Usi</option>
+                                <option value="accesorii">Accesorii</option>
+                                
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="campo ">
+                    <label>Titlu:</label>
+                    <input type="text " placeholder="Titlu " name="nombre ">
+                </div>
+
+
+                <div class="campo ">
+                    <label>Descriere:</label>
+                    <textarea placeholder="Descriere " id="descriere " name="nombre "></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="choose_file">Imagen:</label>
+                    <input type="file" name="imagen" id="choose_file">
+                </div>
+                <div class="enviar ">
+                    <input type="submit " class="btn btn " value="Salvati produs ">
+                </div>
+
+            </form>
+
+        </main>
+    </div>
+
+</body>

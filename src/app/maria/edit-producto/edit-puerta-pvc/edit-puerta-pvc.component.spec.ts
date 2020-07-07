@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArticulosComponent } from './articulos.component';
+import { EditPuertaPvcComponent } from './edit-puerta-pvc.component';
 
-describe('ArticulosComponent', () => {
-  let component: ArticulosComponent;
-  let fixture: ComponentFixture<ArticulosComponent>;
+describe('EditPuertaPvcComponent', () => {
+  let component: EditPuertaPvcComponent;
+  let fixture: ComponentFixture<EditPuertaPvcComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArticulosComponent ]
+      declarations: [ EditPuertaPvcComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArticulosComponent);
+    fixture = TestBed.createComponent(EditPuertaPvcComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

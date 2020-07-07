@@ -1,1 +1,18 @@
-<p>register works!</p>
+<body>
+
+    <div id="login-box">
+        <div class="left-box">
+            <h1> Creaza un cont</h1>
+
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Parola:" />
+            <input type="password" name="password2" placeholder="Repeta parola:" />
+            <input type="submit" name="signup-button" value="Sign Up" [routerLink]="['/dashboard']" />
+            <div><a class=" " routerLinkActive="active" [routerLink]="['/politicaPrivacidad']">By signing in, you accept the Terms of Service and Privacy Policy.</a></div>
+        </div>
+        <!--cambiar user por el nombre de usuario-->
+
+    </div>
+
+</body>

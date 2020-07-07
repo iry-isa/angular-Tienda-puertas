@@ -15,14 +15,17 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 
 import { DashboardMariaComponent } from './dashboard-maria/dashboard-maria.component';
 import { ProgressComponent } from './progress/progress.component';
+import { Graficas1Component } from './graficas1/graficas1.component';
 import { GraficasComponent } from './graficas/graficas.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
-import { Graficas1Component } from './graficas1/graficas1.component';
 import { UploadComponent } from '../upload/upload.component';
 import { MariaRoutingModule } from './maria.routes';
 import { AppComponent } from '../app.component';
+import { EditPuertaPvcComponent } from './edit-producto/edit-puerta-pvc/edit-puerta-pvc.component';
+import { EditSobaTeracotaComponent } from './edit-producto/edit-soba-teracota/edit-soba-teracota.component';
+
 
 
 
@@ -41,11 +44,14 @@ import { AppComponent } from '../app.component';
     UsuariosComponent,
     DashboardMariaComponent,
     ProgressComponent,
-    GraficasComponent,
     PromesasComponent,
     RxjsComponent,
     AccoutSettingsComponent,
     Graficas1Component,
+     GraficasComponent,
+     EditPuertaPvcComponent,
+     EditSobaTeracotaComponent,
+    
     //UploadComponent,
 
   ],

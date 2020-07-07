@@ -1,18 +1,11 @@
 <body>
 
     <div id="login-box">
-        <div class="left-box">
-            <h1> Creaza un cont</h1>
-
-            <input type="text" name="username" placeholder="Username" />
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Parola:" />
-            <input type="password" name="password2" placeholder="Repeta parola:" />
-            <input type="submit" name="signup-button" value="Sign Up" />
-            <div><a class=" " routerLinkActive="active" [routerLink]="['/politicaPrivacidad']">By signing in, you accept the Terms of Service and Privacy Policy.</a></div>
-        </div>
-        <!--cambiar user por el nombre de usuario-->
         <div class="right-box">
+
+        </div>
+
+        <div class="left-box">
             <h1> Autentifica-te</h1>
 
             <form>
@@ -21,15 +14,18 @@
                 <p>Parola</p>
 
                 <input type="password" name="password" placeholder="Enter Password" required>
-                <input type="submit" name="login-button" value="Autentifica-te">
-                <p>no tienes cuenta?</p>
+                <input type="submit" name="login-button" value="Autentifica-te" [routerLink]="['/dashboard']">
+                <br>
+                <a [routerLink]="['/register']">Nu ai cont?</a>
             </form>
-            <button class="social facebook">Autentifica-te cu Facebook</button>
-            <button class="social google">Autentifica-te cu Google+</button>
+            <button class="social facebook" [routerLink]="['/dashboard']">Autentifica-te cu Facebook</button>
+            <button class="social google" [routerLink]="['/dashboard']">Autentifica-te cu Google+</button>
+
+            <button class="social google" [routerLink]="['/maria']">Maria</button>
             <div><a class=" " routerLinkActive="active" [routerLink]="['/termsofservices']">
                 By login in, you accept the Terms of Service and Privacy Policy</a></div>
         </div>
-        <div class="or">OR</div>
+
     </div>
 
 </body>
